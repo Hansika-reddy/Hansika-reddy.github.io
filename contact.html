@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body {
+    background-image: url("back.jpg"); 
+    background-size: cover; /* Make sure the background covers the entire page */
+    background-position: center; /* Center the background image */
+    font-family: Arial, sans-serif; /* Optional: Set a font family for the form */
+    margin-top: 4%;
+    margin-bottom: 3%
+    padding: 0;
+  }
+  
+  .form-container {
+    width: 70%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9); /* White background with some transparency */
+    padding: 20px;
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow for depth */
+  }
+  
+  .form-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"], select, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 8px;
+    margin-bottom: 10px; /* Add some space between inputs */
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+</style>
+</head>
+<body>
+<div class="form-container">
+  <div class="form-title">Book an Appointment</div>
+  <form action="http://www.example.com/comments.php" method="POST">
+    <p>
+      <input type="text" name="Name" id="name" size="15" maxlength="50" required="required" placeholder="Name"/>
+    </p>
+    <p>
+      <input type="text" name="PhoneNumber" id="phone" size="15" maxlength="50" required="required" placeholder="Phone number" />
+    </p> 
+    <p>
+      <select name="Gender">
+        <option value="Male">Male</option> 
+        <option value="Female">Female</option> 
+        <option value="Child">Child</option>
+      </select>
+    </p> 
+    <p>
+      <input type="text" name="Age" id="Age" size="15" maxlength="10" placeholder="Age" />
+    </p>
+    <p>
+      <select name="slot">
+        <option value="time">10:00 A.M. - 1:00 P.M.</option> 
+        <option value="time">4:00 P.M. - 9:00 P.M.</option> 
+      </select>
+    </p> 
+    <p>
+      <input type="text" name="City" id="Place" size="15" maxlength="10" required="required" placeholder="City" />
+    </p>
+    <p>
+      <select name="Services">
+        <option value="Appointment for">Appointment for</option> 
+        <option value="Complete Eye Checkup">Complete Eye Checkup</option> 
+        <option value="Spectacles">Spectacles</option>
+        <option value="Cataract">Cataract</option>
+        <option value="Laser cataract surgery">Laser Cataract surgery</option>
+        <option value="Eye Lasers">Eye lasers</option>
+        <option value="Lasik">Lasik</option>
+        <option value="Glaucoma">Glaucoma</option>
+        <option value="PRK">PRK</option>
+        <option value="Retina">Retina</option>
+        <option value="Pterygium">Pterygium</option>
+        <option value="Oculoplasty">Oculoplasty</option>
+      </select>
+    </p> 
+    <p>
+      <textarea name="comments" id="comments" cols="20" rows="4" placeholder="Message"></textarea>
+    </p>
+    <p>
+      <input type="submit" value="Submit">
+    </p>
+  </form>
+</div>
+</body>
+</html>
